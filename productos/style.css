@@ -1,0 +1,7 @@
+.img-inicio{
+    background-image: url("../imagen/mujer/inicioheader.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
