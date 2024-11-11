@@ -6,17 +6,73 @@
     <title>Big Mike</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./estilos/style.css">
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: "Gagalin";
+        src: url(../fuentes/gagalin/Gagalin-Regular.otf);
+      }
+      @font-face {
+        font-family: "Distillery strong";
+        src: url(../fuentes/distillery\ strong/.otf);
+      }
+      h1{
+        font-family: "Gagalin";
+      }
+      footer h1{
+        font-family: "Distillery strong";
+      }
+      .img-inicial{
+        background-image: url("./imagen/inicio/ImgInicialf.jpg");
+        height: 245px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content-1 {
+      position: absolute;
+      top: 13%;
+      left: 28%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      }
+      .content-2 {
+      position: absolute;
+      top: 47%;
+      left: 21%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      }
+      .content-3 {
+      position: absolute;
+      background-color: black;
+      border: 1px solid black;
+      top: 88%;
+      left: 19%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 5px;
+      }
+    </style>
 </head>
 <body>
+  
     <nav class="navbar has-shadow is-black">
 
-        <div class="navbar-brand is-centered">
-          <a href="" class="navbar-item">
-            <img src="./Logo/logo1.png" alt="logo site" style="max-height: 70px" class="my-2 mx-2" />
+        <div class="navbar-brand ">
+          <a href="index.html" class="navbar-item">
+            <img src="./imagen/Logo/logo1.png" alt="logo site" style="max-height: 70px" class="my-2 mx-2" />
           </a>
-          <h1 class="navbar-item is-size-5 has-text-white " is-white>siente la libertad de ser tu mismo</h1>
+          <h1 class="navbar-item is-size-2-desktop is-size-3-tablet is-size-5-mobile has-text-white" is-white>siente la libertad de ser tu mismo</h1>
           <a class="navbar-burger" id="burger">
-            <span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -25,47 +81,78 @@
     
         <div class="navbar-menu" id="nav-links">
           <div class="navbar-end">
-            <a class="navbar-item"> Inicio</a>
-            <a class="navbar-item"> Productos</a>
-            <a class="navbar-item"> Contácto</a>
+            
+            <a class="navbar-item" href="index.html"> Inicio</a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Productos</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./productos/ropahombres.html">Ropa Hombres</a>
+              <a class="navbar-item" href="./productos/ropamujeres.html">Ropa Mujeres</a>
+            </div>
+          </div>
+
+          <a class="navbar-item" href="./contactos/index.html"> Contácto</a>
           </div>
         </div>
-      </nav>
-    <!--<header class="hero is-danger " >
-        <a href="index.html" class="navbar-item is-size-4 has-text-white">SIENTE LA LIBERTAD DE SER TU MISMO</a>
-         <h1 class="title"></h1> 
-    </header>-->
-    <section>
-        <img src="" alt="">
-        <h1>Tienda de ropa para tallas grandes</h1>
-        <h1>OFERTAS <br> EXCLUSIVAS</h1>
-        <div>
-            Compra ahora
+      </nav>      
+
+      <div class="img-inicial is-responsive">
+        <div class="content-1">
+          <h1 class="title is-size-4 has-text-white">Tienda de ropa para tallas grandes</h1>
         </div>
-    </section>
-    <section>
-        <div>
-            ROPA PARA MUJERES
+        <div class="content-2">
+          <h1 class="subtitle is-size-1 has-text-white">OFERTAS <br> EXCLUSIVAS</h1>
         </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="content-3">
+          <h1 class="subtitle is-size-3 has-text-white">Compra ahora</h1>
         </div>
-        <div>
-            ROPA PARA HOMBRES
+      </div>
+
+      <div class="box has-background-black has-text-centered" >
+        <h1 class="title is-size-4 has-text-white">ROPA PARA MUJERES</h1>
+      </div>
+
+      <div class="columns is-centered is-mobile">
+        <div class="column is-narrow">
+          <img src="./imagen/mujer/vestidos/vestido1.jpg" alt="Imagen 1" style="width: 200px; height: auto; top:5%;">
         </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="column is-narrow">
+            <img  src="./imagen/mujer/pantalones/pantalon1.jpg" alt="Imagen 2" style="width: 200px; height: auto; top:5%;">        </div>
+        <div class="column is-narrow">
+            <img  src="./imagen/mujer/jeans/jeans1.jpg" alt="Imagen 3" style="width: 200px; height: auto; top:5%;">
         </div>
-    </section>
-    <footer>
-        <img src="" alt="">
-        <h1>EN LA PRIMERA COMPRA</h1>
+        <div class="column is-narrow">
+            <img  src="./imagen/mujer/Shorts/short1.jpg" alt="Imagen 4" style="width: 200px; height: auto; top:5%;">
+        </div>
+      </div>
+      
+      <div class="box has-background-black has-text-centered" >
+        <h1 class="title is-size-4 has-text-white">ROPA PARA HOMBRES</h1>
+      </div>
+
+      <div class="columns is-centered is-mobile">
+        <div class="column is-narrow">
+          <img src="./imagen/hombre/camisas/camisa1.jpg" alt="Imagen 1" style="width: 200px; height: auto; top:5%;">
+        </div>
+        <div class="column is-narrow">
+          <img src="./imagen/hombre/pantalon/pantalon1.png" alt="Imagen 2" style="width: 200px; height: auto; top:5%;">
+        </div>
+        <div class="column is-narrow">
+          <img src="./imagen/hombre/pantalonetas/panataloneta3.png" alt="Imagen 3" style="width: 200px; height: auto; top:5%;">
+        </div>
+        <div class="column is-narrow">
+          <img src="./imagen/hombre/camisas/camisa3.png" alt="Imagen 4" style="width: 200px; height: auto; top:5%;">
+        </div>
+      </div>
+      
+    <footer class="box has-background-black columns is-centered">
+      <div class="column is-one-quarter ">
+        <img class="image" src="./imagen/inicio/30img.jpg" alt="img-descuento" style="width: 200px; height: auto; top:5%;">
+      </div>
+      <div class="column is-half has-text-left">
+        <h1 class="title is-size-2 has-text-white " style="text-align: justify;">EN LA PRIMERA COMPRA</h1>
+      </div>
     </footer>
     <script src="./index.js"></script>
 </body>
