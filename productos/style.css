@@ -1,5 +1,13 @@
-.img-inicio{
+.img-inicio-mujer{
     background-image: url("../imagen/mujer/inicioheader.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-inicio-hombre{
+    background-image: url("../imagen/hombre/inicioHeader.png");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
