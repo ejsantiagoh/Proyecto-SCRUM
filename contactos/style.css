@@ -1,0 +1,15 @@
+body{
+    background-image: url(/IMG/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    height: 130vh;
+}
+#contactos{
+    background-color: white;
+    margin: 5%;
+}
+#contactos2{
+    margin: 5%;
+}
