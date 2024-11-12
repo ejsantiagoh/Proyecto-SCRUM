@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+   
+</head>
+<body>
+    <nav class="navbar has-shadow is-black">
+        <div class="container is-flex is-align-items-center is-justify-content-space-between">
+            <div class="navbar-brand is-flex is-align-items-center">
+                <a href="index.html" class="navbar-item">
+                  <img src="/IMG/logo1.webp" alt="logo site" style="max-height: 70px" class="my-2 mx-2" />
+                </a>
+                <h1 class="navbar-item title has-text-centered has-text-white is-size-2-desktop is-size-3-tablet is-size-5-mobile has-text-white" is-white>SIENTE LA LIBERTAD DE SER TU MISMO</h1>
+                <a class="navbar-burger" id="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+          
+              <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                  
+                  <a class="navbar-item" href="index.html"> Inicio</a>
+      
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link"> Productos</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="./productos/ropahombres.html">Ropa Hombres</a>
+                    <a class="navbar-item" href="./productos/ropamujeres.html">Ropa Mujeres</a>
+                  </div>
+                </div>
+      
+                <a class="navbar-item" href="./contactos/index.html"> Contácto</a>
+                </div>
+              </div>
+        </div>   
+    </nav>
+ 
+    <div class="container">
+        <div class="columns">
+            <div id="contactos" class="column">
+                <h1 class="title is-flex is-justify-content-center">CONTACTANOS </h1>
+                <p class="subtitle is-flex is-justify-content-center">¡DEJANOS TUS DATOS PERSONALES!</p>
+                <form action="" method="get">
+                    <div class="field">
+                        <label for="nombre">Nombre y apellidos:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"value="" required minlength="4" maxlength="20" size="50" >
+                    </div>
+                    <div class="field">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo"value="" required minlength="4" maxlength="20" size="50">
+                    </div>
+                    <div class="field">
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" id="edad">
+                    </div> 
+                    <div class="field">
+                        <label for="sexo">Sexo</label>
+                        <input type="radio" name="sexo" id="sexo" value="mujer"> mujer
+                        <input type="radio" name="sexo" id="sexo" value="hombre"> hombre
+                        <input type="radio" name="sexo" id="sexo" value="otro"> otro
+                    </div>
+                    <div class="field">
+                        <label for="tel">telefono</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div class="field">
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Hazme saber tus comentarios"></textarea>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="enviar">
+                        <input type="hidden" name="categoria" value="backend" id="categoria">
+                    </div>
+                </form>
+
+            </div>
+            <div id="contactos2" class="column">
+                <h1 class="title has-text-centered mb-4">NUESTRAS REDES SOCIALES</h1>
+                <div class="is-flex is-justify-content-center">
+                    <a href="https://www.facebook.com/profile.php?id=61568622509040"><figure class="image is-128x128 mx-3">
+                        <img src="/IMG/Facebook_Logo_(2019).png.webp" alt=""></figure></a>
+                    <a href="https://web.whatsapp.com/"><figure class="image is-128x128 mx-3">
+                        <img src="/IMG/WhatsApp_icon.png" alt="">
+                        </figure></a> 
+                    <a href="https://www.instagram.com/tiendasbigmike/"><figure class="image is-128x128 mx-3">
+                        <img src="/IMG/vector-logotipo-instagram_768467-330.avif" alt="">
+                        </figure></a>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <footer class="footer has-background-black has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Mi Proyecto</strong> BIGMIKE <a href="http://127.0.0.1:5500/contacto.html" class="has-text-white"></a>. <br>
+                © 2024 Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
