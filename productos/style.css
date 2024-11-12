@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Gagalin";
+    src: url(../fuentes/gagalin/Gagalin-Regular.otf);
+  }
+
+  h1{
+    font-family: "Gagalin";
+  }
+
 .img-inicio-mujer{
     background-image: url("../imagen/mujer/inicioheader.png");
     height: 500px;
