@@ -3,50 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Productos</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
     />
+    <link rel="shortcut icon" href="../imagen/Logo/logo1.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar has-background-white">
-      <a class="navbar-burger" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
 
-      <div class="navbar-menu" id="nav-links">
-        <div class="navbar-start">
-          <a class="navbar-item"> Inicio</a>
-          <a class="navbar-item"> Contácto</a>
-        </div>
-      </div>
-      <div class="navbar-brand has-text-centered">
-        <div class="m-auto">
-          <h1 class="navbar-item">Siente la Libertad De ser tu mismo</h1>
-        </div>
+    <style>
+        @font-face {
+        font-family: "Gagalin";
+        src: url(../fuentes/gagalin/Gagalin-Regular.otf);
+      }
 
-        <a href="" class="navbar-item">
-          <img
-            src="../imagen/Logo/logo1.png"
-            alt="logo site"
-            style="max-height: 70px"
-            class="my-2 mx-2"
-          />
-        </a>
-      </div>
-    </nav>
+      h1{
+        font-family: "Gagalin";
+      }
+    </style>
+
+    <nav class="navbar  is-black has-background-black">
+
+        <div class="navbar-brand ">
+          <a href="index.html" class="navbar-item">
+            <img src="../imagen/Logo/logo1.png" alt="logo site" style="max-height: 70px" class="my-2 mx-2" />
+          </a>
+        
+          <a class="navbar-burger has-text-white " id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+    
+        <div class="navbar-menu " id="nav-links">
+          <div class="navbar-end ">
+            
+            <a class="navbar-item" href="../index.html"> Inicio</a>
+
+          <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link"> Productos</a>
+            <div class="navbar-dropdown ">
+              <a class="navbar-item" href="./ropahombres.html">Ropa Hombres</a>
+              <a class="navbar-item" href="./ropamujeres.html">Ropa Mujeres</a>
+            </div>
+          </div>
+
+          <a class="navbar-item" href="../contactos/index.html"> Contácto</a>
+          </div>
+        </div>
+      </nav> 
+      
+      
 
     <!-- Imagen inicial -->
 
     <div class="img-inicio-hombre"></div>
 
-    <div class="container mt-4">
+    <div class="container mt-4 has-text-black">
         <h1 class=" is-size-1 has-text-centered mt-6 mb-2">Conoce nuestra nueva colección </h1>
 
       <div class="is-flex is-justify-content-space-around is-flex-wrap-wrap">
@@ -54,7 +71,6 @@
         <a href="#camisas" class="button is-light is-size-5 mt-6 mx-3">Camisas Manga Corta</a>
         <a href="#pantalonetas"  class="button is-light is-size-5 mt-6 mx-3">Pantalonetas</a>
         <a href="#pantalones"  class="button is-light is-size-5 mt-6 mx-3">Pantalones</a>
-        <a href="#"  class="button is-light is-size-5 mt-6 mx-3">Pantalones</a>
 
       </div>
     </div>
@@ -67,8 +83,6 @@
     <!-- camisas -->
     <section class="section" id="camisas">
       <div class="container">
-
-
         <h2 class="subtitle is-size-3">Camisa manga corta</h2>
         <div
           class="fixed-grid container has-1-cols-mobile has-2-cols-tablet has-4-cols-desktop"
@@ -896,6 +910,6 @@
 
 
     <!-- script -->
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

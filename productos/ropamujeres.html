@@ -3,44 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Productos</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
     />
 
+    <link rel="shortcut icon" href="../imagen/Logo/logo1.png" type="image/x-icon">
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar has-background-white">
-      <a class="navbar-burger" id="burger">
-        <span></span>
+    <style>
+      @font-face {
+      font-family: "Gagalin";
+      src: url(../fuentes/gagalin/Gagalin-Regular.otf);
+    }
+
+    h1{
+      font-family: "Gagalin";
+    }
+  </style>
+  
+  <nav class="navbar  is-black ">
+
+    <div class="navbar-brand ">
+      <a href="index.html" class="navbar-item">
+        <img src="../imagen/Logo/logo1.png" alt="logo site" style="max-height: 70px" class="my-2 mx-2" />
+      </a>
+    
+      <a class="navbar-burger has-text-white" id="burger">
         <span></span>
         <span></span>
         <span></span>
       </a>
+    </div>
 
-      <div class="navbar-menu" id="nav-links">
-        <div class="navbar-start">
-          <a class="navbar-item"> Inicio</a>
-          <a class="navbar-item"> Contácto</a>
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        
+        <a class="navbar-item" href="../index.html"> Inicio</a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Productos</a>
+        <div class="navbar-dropdown ">
+          <a class="navbar-item" href="./ropahombres.html">Ropa Hombres</a>
+          <a class="navbar-item" href="./ropamujeres.html">Ropa Mujeres</a>
         </div>
       </div>
-      <div class="navbar-brand has-text-centered">
-        <div class="m-auto">
-          <h1 class="navbar-item">Siente la Libertad De ser tu mismo</h1>
-        </div>
 
-        <a href="" class="navbar-item">
-          <img
-            src="../imagen/Logo/logo1.png"
-            alt="logo site"
-            style="max-height: 70px"
-            class="my-2 mx-2"
-          />
-        </a>
+      <a class="navbar-item" href="../contactos/index.html"> Contácto</a>
       </div>
-    </nav>
+    </div>
+  </nav>  
+
+
 
     <!-- Imagen inicial -->
 
@@ -1175,6 +1192,6 @@
     </div>
 
     <!-- script -->
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
